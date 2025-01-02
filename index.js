@@ -40,9 +40,9 @@ function addGamesToPage(games) {
         // about each game
         const displayGameInfo = `
                                 <div>
-                                    <h2> ${games[i].name} <h2>
+                                    <h2> ${games[i].name} </h2>
                                     <img class="game-img" src="${games[i].img}" />
-                                    <p> ${games[i].description} <p>
+                                    <p> ${games[i].description} </p>
                                 </div>
                                 `
 
@@ -163,9 +163,14 @@ totalUnfundedGames = totalUnfundedGames.length;
 console.log(totalUnfundedGames);
 
 // create a string that explains the number of unfunded games using the ternary operator
-
+const displayStr = `A total of $${totalRaised.toLocaleString('en-US')} has been raised 
+                    for ${totalGames} games. Currently, ${totalUnfundedGames} remains unfunded. 
+                    We need your help to fund these amazing games!`
 
 // create a new DOM element containing the template string and append it to the description container
+const descriptionStr = `<p> ${displayStr} </p>`
+
+descriptionContainer.insertAdjacentHTML("beforeend", descriptionStr);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
