@@ -135,11 +135,12 @@ function showAllGames() {
     deleteChildElements(gamesContainer);
 
     // add all games from the JSON data to the DOM
-    let listOfAllGames = GAMES_JSON.games.map(game => game.name);
-
+    let listOfAllGames = GAMES_JSON;
     addGamesToPage(listOfAllGames);
-
+    console.log(listOfAllGames);
 }
+
+showAllGames();
 
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
