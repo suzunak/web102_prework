@@ -68,6 +68,32 @@ body {
     box-shadow: 0 0 30px lightblue;
 }
 
+.search {
+    position: relative;
+    align-items: center;
+    display: grid;
+    width: 25%;
+    height: 50px;
+}
+
+#search-bar {
+    padding: 0.5% 3%;
+    border: none;
+    border-radius: 7px;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+#search-btn {
+    justify-self: end;
+    position: absolute;
+    margin: 0;
+    padding: 1.2%;
+    border-radius: 7px;
+    height: 50%;
+    width: 15%;
+}
+
 #button-container {
     text-align: center;
 }
