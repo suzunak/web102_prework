@@ -5,6 +5,35 @@ body {
     background-color: #758190;
 }
 
+.nav-btns {
+    display: flex;
+    justify-content: end;
+    border: none;
+    margin: 1%;
+}
+
+#nav-search-btn {
+    background-color: transparent;
+    padding: 0.5%;
+    margin: 0.5%;
+    text-decoration: underline;
+}
+
+#nav-search-btn:hover {
+    color: rgb(143, 15, 150);
+}
+
+#nav-games-btn  {
+    background-color: transparent;
+    padding: 0.5%;
+    margin: 0.5%;
+    text-decoration: underline;
+}
+
+#nav-games-btn:hover {
+    color: rgb(143, 15, 150);
+}
+
 #tentacles {
     width: 50px;
 }
