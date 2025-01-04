@@ -200,8 +200,51 @@ console.log(topTwoGames);
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
 const firstGameName = `<p> ${name1} </p>`;
-const secondGameName = `<p> ${name2} </p>`;
-
 firstGameContainer.insertAdjacentHTML("beforeend", firstGameName);
-secondGameContainer.insertAdjacentHTML("beforeend", secondGameName);
 // do the same for the runner up item
+const secondGameName = `<p> ${name2} </p>`;
+secondGameContainer.insertAdjacentHTML("beforeend", secondGameName);
+
+/**********************************************************
+ * Customizations
+ * 1. Search for game
+ * 2. Nav Bar
+ * 3. Make it more visually appealing
+ * 4. Make the cards flip on click for more info
+ */
+
+// search for game
+const searchBtn = document.getElementById("search-btn");
+const searchBar = document.getElementById("search-bar");
+
+const filterResult = () => {
+    const searchInput = searchBar.value.toLowerCase();
+    const resultGame = GAMES_JSON.filter( (games) => 
+        games.name.toLowerCase() == searchInput
+    );
+
+    deleteChildElements(gamesContainer);
+
+    if (resultGame.length !== 0) {
+        addGamesToPage(resultGame);
+    } else {
+        console.log(searchInput);
+        // the filter gets rid of extra white spaces
+        const words = searchInput.split(" ").filter(word => word !== "");
+
+        const suggestResults = GAMES_JSON.filter( (games) => 
+            // .some() is an arr method that checks if at least one element in arr satisfies 
+            words.some(word => games.name.toLowerCase().includes(word))
+        );
+
+        if (suggestResults.length !== 0) {
+            addGamesToPage(suggestResults);
+            console.log(words);
+        } else {
+            const noGameFound = `<p> Matching results not found </p>`;
+            gamesContainer.innerHTML = noGameFound;
+        }
+    }
+}
+
+searchBtn.addEventListener("click", filterResult);
