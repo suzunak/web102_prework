@@ -246,3 +246,18 @@ const filterResult = () => {
 }
 
 searchBtn.addEventListener("click", filterResult);
+
+// nav buttons
+const searchGame = document.getElementById("nav-search-btn");
+const seeAllGames = document.getElementById("nav-games-btn");
+
+const ourGames = document.getElementsByClassName('our-games')[0];
+
+searchGame.addEventListener("click", () => {
+    ourGames.scrollIntoView({behavior: "smooth"});
+});
+
+seeAllGames.addEventListener("click", () => {
+    showAllGames();
+    gamesContainer.scrollIntoView({behavior: "smooth"});
+});
