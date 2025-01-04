@@ -209,8 +209,6 @@ secondGameContainer.insertAdjacentHTML("beforeend", secondGameName);
  * Customizations
  * 1. Search for game
  * 2. Nav Bar
- * 3. Make it more visually appealing
- * 4. Make the cards flip on click for more info
  */
 
 // search for game
