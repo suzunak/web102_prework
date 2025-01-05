@@ -22,9 +22,12 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented features (gif too large so I attached a link):
+Here's a walkthrough of implemented features (gif is hard to see so I also attached a canva link with video):
 
-[Suzuna Kimura - Web102 Prework](https://www.canva.com/design/DAGbSeMGhCg/kRn8Zr3P6_M4Ql0hPknZ5A/watch?utm_content=DAGbSeMGhCg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he7e3be8d13)
+[web102_prework1_gif](https://github.com/user-attachments/assets/df8390d1-f69d-4d18-9477-539586253816)
+
+
+[Suzuna Kimura - Web102 Prework Video](https://www.canva.com/design/DAGbSeMGhCg/kRn8Zr3P6_M4Ql0hPknZ5A/watch?utm_content=DAGbSeMGhCg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he7e3be8d13)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
