@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features (gif too large so I attached a link):
 
-[Suzuna Kimura - Web102 Prework](https://www.canva.com/design/DAGbSeMGhCg/ilF38Npk8MReT-rZqkPNLQ/edit?utm_content=DAGbSeMGhCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Suzuna Kimura - Web102 Prework](https://www.canva.com/design/DAGbSeMGhCg/kRn8Zr3P6_M4Ql0hPknZ5A/watch?utm_content=DAGbSeMGhCg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he7e3be8d13)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
