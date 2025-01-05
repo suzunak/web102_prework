@@ -5,6 +5,35 @@ body {
     background-color: #758190;
 }
 
+.nav-btns {
+    display: flex;
+    justify-content: end;
+    border: none;
+    margin: 1%;
+}
+
+#nav-search-btn {
+    background-color: transparent;
+    padding: 0.5%;
+    margin: 0.5%;
+    text-decoration: underline;
+}
+
+#nav-search-btn:hover {
+    color: rgb(143, 15, 150);
+}
+
+#nav-games-btn  {
+    background-color: transparent;
+    padding: 0.5%;
+    margin: 0.5%;
+    text-decoration: underline;
+}
+
+#nav-games-btn:hover {
+    color: rgb(143, 15, 150);
+}
+
 #tentacles {
     width: 50px;
 }
@@ -68,6 +97,32 @@ body {
     box-shadow: 0 0 30px lightblue;
 }
 
+.search {
+    position: relative;
+    align-items: center;
+    display: grid;
+    width: 25%;
+    height: 50px;
+}
+
+#search-bar {
+    padding: 0.5% 3%;
+    border: none;
+    border-radius: 7px;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+#search-btn {
+    justify-self: end;
+    position: absolute;
+    margin: 0;
+    padding: 1.2%;
+    border-radius: 7px;
+    height: 50%;
+    width: 15%;
+}
+
 #button-container {
     text-align: center;
 }
@@ -78,4 +133,5 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    cursor: pointer;
 }

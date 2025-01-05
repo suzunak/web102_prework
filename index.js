@@ -185,7 +185,79 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+console.log(sortedGames[0]);
+let {name: name1, description: desc1, pledged: pl1, goal: goal1, backers: bcker1, img: img1} = sortedGames[0];
+console.log(name1);
+const firstGame = [name1, desc1, pl1, goal1, bcker1, img1]
+
+console.log(sortedGames[1]);
+let {name: name2, description: desc2, pledge: pl2, goal: goal2, backers: bcker2, img: img2} = sortedGames[1];
+const secondGame = [name2, desc2, pl2, goal2, bcker2, img2]
+
+const topTwoGames = [...firstGame, ...secondGame];
+
+console.log(topTwoGames);
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-
+const firstGameName = `<p> ${name1} </p>`;
+firstGameContainer.insertAdjacentHTML("beforeend", firstGameName);
 // do the same for the runner up item
+const secondGameName = `<p> ${name2} </p>`;
+secondGameContainer.insertAdjacentHTML("beforeend", secondGameName);
+
+/**********************************************************
+ * Customizations
+ * 1. Search for game
+ * 2. Nav Bar
+ */
+
+// search for game
+const searchBtn = document.getElementById("search-btn");
+const searchBar = document.getElementById("search-bar");
+
+const filterResult = () => {
+    const searchInput = searchBar.value.toLowerCase();
+    const resultGame = GAMES_JSON.filter( (games) => 
+        games.name.toLowerCase() == searchInput
+    );
+
+    deleteChildElements(gamesContainer);
+
+    if (resultGame.length !== 0) {
+        addGamesToPage(resultGame);
+    } else {
+        console.log(searchInput);
+        // the filter gets rid of extra white spaces
+        const words = searchInput.split(" ").filter(word => word !== "");
+
+        const suggestResults = GAMES_JSON.filter( (games) => 
+            // .some() is an arr method that checks if at least one element in arr satisfies 
+            words.some(word => games.name.toLowerCase().includes(word))
+        );
+
+        if (suggestResults.length !== 0) {
+            addGamesToPage(suggestResults);
+            console.log(words);
+        } else {
+            const noGameFound = `<p> Matching results not found </p>`;
+            gamesContainer.innerHTML = noGameFound;
+        }
+    }
+}
+
+searchBtn.addEventListener("click", filterResult);
+
+// nav buttons
+const searchGame = document.getElementById("nav-search-btn");
+const seeAllGames = document.getElementById("nav-games-btn");
+
+const ourGames = document.getElementsByClassName('our-games')[0];
+
+searchGame.addEventListener("click", () => {
+    ourGames.scrollIntoView({behavior: "smooth"});
+});
+
+seeAllGames.addEventListener("click", () => {
+    showAllGames();
+    gamesContainer.scrollIntoView({behavior: "smooth"});
+});
