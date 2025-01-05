@@ -33,8 +33,8 @@ GIF created with ...
 
 
 ## Notes
-
-Describe any challenges encountered while building the app.
+- Using the filter and reduce method on GAMES_JSON (games.js) was challenging, but I believe I understand the logic after completing it.
+- Challenge #2, secrety key component 2 was challenging to uncover. 
 
 ## License
 
