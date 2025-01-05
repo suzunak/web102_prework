@@ -28,7 +28,7 @@ Here's a walkthrough of implemented features (gif too large so I attached a link
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
-- Kap
+- FreeConvert
 - Canva
 
 
