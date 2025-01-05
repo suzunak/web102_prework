@@ -22,13 +22,14 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented features:
+Here's a walkthrough of implemented features (gif too large so I attached a link):
 
-<img src='https://www.canva.com/design/DAGbSeMGhCg/kRn8Zr3P6_M4Ql0hPknZ5A/watch' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Suzuna Kimura - Web102 Prework](https://www.canva.com/design/DAGbSeMGhCg/ilF38Npk8MReT-rZqkPNLQ/edit?utm_content=DAGbSeMGhCg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
-Canva
+- Kap
+- Canva
 
 
 ## Notes
@@ -37,7 +38,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Suzuna Kimura]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
